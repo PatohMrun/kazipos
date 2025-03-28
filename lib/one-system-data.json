@@ -1,0 +1,42 @@
+[
+  {
+    "id": "payments",
+    "label": "Payments",
+    "icon": "💳",
+    "color": "#FFFFFF",
+    "radius": 100,
+    "title": "Payments",
+    "subtitle": "So many ways to pay",
+    "description": "From quick counter transactions to full tableside service. Cover lets you accept payments anywhere."
+  },
+  {
+    "id": "software",
+    "label": "Software",
+    "icon": "⚙️",
+    "color": "#FCECEC",
+    "radius": 200,
+    "title": "Software",
+    "subtitle": "Keep service running smoothly",
+    "description": "Manage your business with our easy-to-use software platforms."
+  },
+  {
+    "id": "hardware",
+    "label": "Hardware",
+    "icon": "🖥️",
+    "color": "#FCEEEE",
+    "radius": 300,
+    "title": "Hardware",
+    "subtitle": "Devices that deliver",
+    "description": "Reliable hardware solutions built for daily use in any environment."
+  },
+  {
+    "id": "apps",
+    "label": "Apps",
+    "icon": "📱",
+    "color": "#FFD6CF",
+    "radius": 400,
+    "title": "Apps",
+    "subtitle": "Apps to help you do even more",
+    "description": "Extend your capabilities with our suite of integrated applications."
+  }
+]
