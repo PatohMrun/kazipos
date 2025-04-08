@@ -173,11 +173,9 @@ export default function Home() {
       </div>
 
       {/* section 4 */}
-      <AppShowcase />
+      <div className="mb-36 sm:mb-56 md:mb-6"><AppShowcase /></div>
 
-      <div className="mb-20 md:mb-2">
-        <DeckCards />
-      </div>
+      <div className=""><DeckCards /></div>
     </div>
   );
 }

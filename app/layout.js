@@ -157,10 +157,8 @@ export default function NavLayout({ children }) {
       className={`${almarenaRegular.variable} ${almarenaBold.variable} ${almarenaSemiBold.variable} ${almarenaMedium.variable} ${almarenaLight.variable} ${almarenaRegularItalic.variable} ${almarenaBoldItalic.variable} ${almarenaLightItalic.variable} ${helveticaRegular.variable} ${helveticaBold.variable} ${helveticaSemiBold.variable} ${helveticaLight.variable} ${helveticaThin.variable} ${helveticaRegularItalic.variable} ${helveticaBoldItalic.variable} ${helveticaLightItalic.variable} ${helveticaThinItalic.variable}`}
     >
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        {/* <Navbar /> */}
         {children}
         <Cursor />
-        {/* <Footer /> */}
       </body>
     </html>
   );

@@ -36,33 +36,5 @@
   /* Online Fonts */
   --font-inter: 'Inter', sans-serif;
 
-  /* Define multiple font sizes */
-  --text-tiny: 1rem; /* 16px */
-  --text-small: 1.25rem; /* 20px */
-  --text-mdsm: 2rem; /* 32px */
-  --text-medium: 2.375rem; /* 38px */
-  --text-large: 3rem; /* 48px */
-  --text-huge: 4rem; /* 64px */
-}
-
-@layer base {
-}
-
-@layer utilities {
-  .scrollbar-hide {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-  }
-
-  .scrollbar-hide::-webkit-scrollbar {
-    display: none; /* Chrome, Safari and Opera */
-  }
-}
-
-body {
-  @apply bg-red_shimmer;
-}
-
-.active {
-  @apply bg-baragon_brown py-2 rounded-full md:px-4 hover:transform hover:scale-105 transition-all ease-in-out duration-300 font-almarena-regular;
+  
 }

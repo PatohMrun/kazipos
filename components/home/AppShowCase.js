@@ -24,8 +24,8 @@ const AppShowcase = () => {
           We love to make things easier for everyone.
         </h2>
 
-        <p className="text-tiny md:text-small 2xl:text-[1.75rem] text-baragon_brown font-helvetica-regular">
-          No hidden fees, confusing terms, or complex processes. Kazi.pos makes
+        <p className="text-tiny md:text-small 2xl:text-[1.75rem] text-baragon_brown font-helvetica-regular py-4 sm:py-1">
+          No hidden fees, confusing terms, or complex processes. Kazipos makes
           business management simple, intuitive, and effortless. Our goal is to
           help you track sales, manage inventory, and process payments
           seamlessly—all in just a few taps.

@@ -31,19 +31,19 @@ const InsightsCard = ({
     <div
       className="bg-red_reign text-white px-4 py-6 md:px-8 2xl:px-20 md:py-10 2xl:py-20 mx-2 my-4 md:mx-4 md:my-8 min-w-[95vw] min-h-[90vh] 2xl:min-h-[80vh] rounded-2xl"
     >
-      <div className="flex flex-col md:flex-row justify-between gap-4 md:gap-8 2xl:gap-32">
+      <div className="flex flex-col md:flex-row justify-between gap-4 md:gap-8 xl:gap-16 2xl:gap-32">
         {/* Left content */}
         <motion.div
           {...fadeDown}
-          className="flex flex-col gap-6 md:gap-9 2xl:gap-24 md:w-1/2 font-helvetica"
+          className="flex flex-col gap-6 md:gap-9 lg:gap-14 2xl:gap-24 md:w-1/2 font-helvetica"
         >
-          <h2 className="text-2xl md:text-huge 2xl:text-[4.5rem] leading-tight md:leading-[70px] font-almarena-regular">
+          <h2 className="text-2xl md:text-huge xl:text-[3.5rem] 2xl:text-[4.5rem] leading-tight md:leading-[70px] font-almarena-regular">
             {heading}
           </h2>
-          <p className="text-md md:text-xl 2xl:text-[1.75rem] font-helvetica-regular">{paragraph1}</p>
+          <p className="text-md md:text-xl xl:text-2xl 2xl:text-[1.75rem] font-helvetica-regular">{paragraph1}</p>
 
           <div className="flex flex-col md:flex-row gap-4 items-center">
-            <div className="w-24 h-24 md:w-32 md:h-32 2xl:w-52 2xl:h-52 flex-shrink-0">
+            <div className="w-24 h-24 md:w-32 md:h-32 xl:w-44 xl:h-44 2xl:w-52 2xl:h-52 flex-shrink-0">
               <Image
                 src={image1}
                 alt={alt1}
@@ -52,20 +52,20 @@ const InsightsCard = ({
                 className="rounded-lg w-full h-full object-cover"
               />
             </div>
-            <p className="text-sm md:text-base 2xl:text-[1.5rem] font-helvetica-regular">{paragraph2}</p>
+            <p className="text-sm md:text-base xl:text-lg 2xl:text-[1.5rem] font-helvetica-regular">{paragraph2}</p>
           </div>
 
-          <p className="text-xs md:text-sm 2xl:text-small font-light mt-2 md:mt-4 font-helvetica-regular">{tagline}</p>
+          <p className="text-xs md:text-sm xl:text-tiny 2xl:text-small font-light mt-2 md:mt-4 font-helvetica-regular">{tagline}</p>
         </motion.div>
 
         {/* Right content - image */}
         <motion.div {...fadeUp} className="md:w-1/2">
-          <div className="relative aspect-square md:aspect-video h-full w-full">
+          <div className="relative aspect-square md:aspect-video h-72 md:h-full w-72 md:w-full">
             <Image
               src={image2}
               alt={alt2}
               fill
-              className="rounded-lg w-full h-full object-cover"
+              className="rounded-lg object-cover"
             />
           </div>
         </motion.div>

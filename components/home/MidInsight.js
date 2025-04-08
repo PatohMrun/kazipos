@@ -4,7 +4,7 @@ import { fadeDown, fadeUp } from "@/components/motions/motionVariants.js";
 
 const MidInsight = () => {
   return (
-    <div className="bg-baragon_brown rounded-2xl overflow-hidden text-white px-4 py-6 md:px-12 2xl:px-20 md:py-6 2xl:py-20 mx-2 my-4 md:mx-4 2xl:mx-12 md:my-2 font-helvetica-regular min-h-[90vh] 2xl:min-h-[80vh] min-w-[90vw] 2xl:min-w-[98vw]">
+    <div className="bg-baragon_brown rounded-2xl overflow-hidden text-white px-4 py-6 md:px-12 2xl:px-20 md:py-6 2xl:py-20 mx-2 mt-4 mb-4 md:mx-4 2xl:mx-12 md:mt-12 lg:mt-20 md:mb-2 font-helvetica-regular min-h-[90vh] 2xl:min-h-[80vh] min-w-[90vw] 2xl:min-w-[98vw]">
       {/* Middle Card */}
       <motion.div
         initial={{ opacity: 0, y: 50 }}
@@ -14,13 +14,13 @@ const MidInsight = () => {
         className="flex flex-col md:flex-row justify-between gap-4 md:gap-8 2xl:gap-32"
       >
         {/* Left content */}
-        <div className="flex flex-col gap-4 md:gap-1 md:w-1/2">
+        <div className="flex flex-col gap-4 md:gap-1 xl:gap-5 md:w-1/2">
           <motion.h2
             initial={{ opacity: 0, y: -30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
             viewport={{ once: true }}
-            className="text-2xl md:text-huge 2xl:text-[4.5rem] leading-snug md:leading-tight font-normal font-almarena-regular"
+            className="text-2xl md:text-huge xl:text-[3.5rem] 2xl:text-[4.5rem] leading-snug md:leading-tight font-normal font-almarena-regular"
           >
             Seamless money management
           </motion.h2>
@@ -43,7 +43,7 @@ const MidInsight = () => {
           </motion.div>
 
           <motion.div className="flex items-center gap-2">
-            <p className="text-xs md:text-sm opacity-80">
+            <p className="text-xs md:text-sm xl:text-tiny opacity-80">
               Seamless money management
             </p>
           </motion.div>

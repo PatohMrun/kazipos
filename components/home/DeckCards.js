@@ -16,19 +16,19 @@ const DeckCards = () => {
   // Top Card:
   // - Moves vertically from 0 to -800px as scrollYProgress goes from 0 to 0.3.
   // - Remains fully opaque until 0.1 then fades out by 0.3.
-  const topCardY = useTransform(scrollYProgress, [0, 0.3], [0, -1100]);
+  const topCardY = useTransform(scrollYProgress, [0, 0.3], [-20, -1100]);
   // const topCardOpacity = useTransform(scrollYProgress, [0, 0.1, 0.3], [1, 1, 1]);
 
   // Middle Card:
   // - Moves vertically from 0 to -800px as scrollYProgress goes from 0.3 to 0.6.
   // - Remains fully opaque until 0.4 then fades out by 0.6.
-  const midCardY = useTransform(scrollYProgress, [0.3, 0.6], [0, -1100]);
+  const midCardY = useTransform(scrollYProgress, [0.3, 0.6], [0, -1200]);
   // const midCardOpacity = useTransform(scrollYProgress, [0.3, 0.4, 0.6], [1, 1, 0]);
 
   // Bottom Card:
   // - Instead of translating upward, it remains fixed at y: 0.
   // - Its opacity remains at 1 so it never fades out.
-  const bottomCardY = useTransform(scrollYProgress, [0.3, 0.6], [100, 0]);
+  const bottomCardY = useTransform(scrollYProgress, [0.3, 0.6], [280, -100]);
   const bottomCardOpacity = 1;
 
   return (
@@ -37,6 +37,9 @@ const DeckCards = () => {
       {/* Sticky inner container that pins the deck while within the parent container */}
       <div className="sticky top-10 h-screen flex items-center justify-center">
         {/* Top Card */}
+
+
+
         <motion.div
           style={{ y: topCardY }} // opacity: topCardOpacity
           className="absolute z-30"
@@ -55,6 +58,8 @@ const DeckCards = () => {
           />
         </motion.div>
 
+
+
         {/* Middle Card */}
         <motion.div
           style={{ y: midCardY }} //, opacity: midCardOpacity 
@@ -63,7 +68,11 @@ const DeckCards = () => {
           <MidInsight />
         </motion.div>
 
+
+
+
         {/* Bottom Card */}
+        
         <motion.div
           style={{ y: bottomCardY, opacity: bottomCardOpacity }}
           className="absolute z-10"
